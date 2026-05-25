@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\iimpactpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:iimpactpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\emitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:emitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\particle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:particle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IImpactPoint.cs",
+              "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\IImpactPoint.cs",
+              "RelativeDocumentMoniker": "IImpactPoint.cs",
+              "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\IImpactPoint.cs",
+              "RelativeToolTip": "IImpactPoint.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T04:16:18.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Emitter.cs",
+              "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Emitter.cs",
+              "RelativeDocumentMoniker": "Emitter.cs",
+              "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Emitter.cs",
+              "RelativeToolTip": "Emitter.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwHgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T05:11:11.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Particle.cs",
+              "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Particle.cs",
+              "RelativeDocumentMoniker": "Particle.cs",
+              "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Particle.cs",
+              "RelativeToolTip": "Particle.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T03:53:33.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T03:52:45.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T03:51:30.217Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
