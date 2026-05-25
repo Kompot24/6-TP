@@ -34,11 +34,15 @@
             tbDirection = new TrackBar();
             lblDirection = new Label();
             tbGravitation = new TrackBar();
-            tbGravitation2 = new TrackBar();
+            tbTeleportRad = new TrackBar();
+            tbTeleportDirect = new TrackBar();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)picDisplay).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tbDirection).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tbGravitation).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)tbGravitation2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tbTeleportRad).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tbTeleportDirect).BeginInit();
             SuspendLayout();
             // 
             // picDisplay
@@ -48,6 +52,7 @@
             picDisplay.Size = new Size(786, 446);
             picDisplay.TabIndex = 0;
             picDisplay.TabStop = false;
+            picDisplay.MouseClick += picDisplay_MouseClick;
             picDisplay.MouseMove += picDisplay_MouseMove;
             // 
             // timer1
@@ -75,28 +80,60 @@
             // 
             // tbGravitation
             // 
-            tbGravitation.Location = new Point(428, 454);
+            tbGravitation.Location = new Point(250, 454);
             tbGravitation.Maximum = 100;
             tbGravitation.Name = "tbGravitation";
             tbGravitation.Size = new Size(104, 45);
             tbGravitation.TabIndex = 3;
             tbGravitation.Scroll += tbGravitation_Scroll;
             // 
-            // tbGravitation2
+            // tbTeleportRad
             // 
-            tbGravitation2.Location = new Point(275, 454);
-            tbGravitation2.Maximum = 100;
-            tbGravitation2.Name = "tbGravitation2";
-            tbGravitation2.Size = new Size(104, 45);
-            tbGravitation2.TabIndex = 4;
-            tbGravitation2.Scroll += tbGravitation2_Scroll;
+            tbTeleportRad.Location = new Point(398, 454);
+            tbTeleportRad.Maximum = 150;
+            tbTeleportRad.Minimum = 10;
+            tbTeleportRad.Name = "tbTeleportRad";
+            tbTeleportRad.Size = new Size(104, 45);
+            tbTeleportRad.TabIndex = 4;
+            tbTeleportRad.Value = 10;
+            tbTeleportRad.Scroll += tbTeleportRad_Scroll;
+            // 
+            // tbTeleportDirect
+            // 
+            tbTeleportDirect.Location = new Point(545, 454);
+            tbTeleportDirect.Maximum = 360;
+            tbTeleportDirect.Name = "tbTeleportDirect";
+            tbTeleportDirect.Size = new Size(104, 45);
+            tbTeleportDirect.TabIndex = 5;
+            tbTeleportDirect.Scroll += tbTeleportDirect_Scroll;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(398, 494);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 6;
+            textBox1.Text = "Размер входа";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(528, 494);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(121, 23);
+            textBox2.TabIndex = 7;
+            textBox2.Text = "Направление выхода";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(788, 529);
-            Controls.Add(tbGravitation2);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(tbTeleportDirect);
+            Controls.Add(tbTeleportRad);
             Controls.Add(tbGravitation);
             Controls.Add(lblDirection);
             Controls.Add(tbDirection);
@@ -106,7 +143,8 @@
             ((System.ComponentModel.ISupportInitialize)picDisplay).EndInit();
             ((System.ComponentModel.ISupportInitialize)tbDirection).EndInit();
             ((System.ComponentModel.ISupportInitialize)tbGravitation).EndInit();
-            ((System.ComponentModel.ISupportInitialize)tbGravitation2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tbTeleportRad).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tbTeleportDirect).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,6 +156,9 @@
         private TrackBar tbDirection;
         private Label lblDirection;
         private TrackBar tbGravitation;
-        private TrackBar tbGravitation2;
+        private TrackBar tbTeleportRad;
+        private TrackBar tbTeleportDirect;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

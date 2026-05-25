@@ -9,7 +9,8 @@ namespace WinFormsApp1
         Emitter emitter;
 
         GravityPoint point1;
-        GravityPoint point2;
+
+        TeleportPoint teleport;
         public Form1()
         {
             InitializeComponent();
@@ -37,15 +38,17 @@ namespace WinFormsApp1
                 Y = picDisplay.Height / 2
             };
 
-
-            point2 = new GravityPoint
-            {
-                X = picDisplay.Width / 2 - 100,
-                Y = picDisplay.Height / 2
-            };
-
             emitter.impactPoints.Add(point1);
-            emitter.impactPoints.Add(point2);
+
+            teleport = new TeleportPoint(
+                picDisplay.Width / 2 - 150,
+                picDisplay.Height / 2,
+                picDisplay.Width / 2,
+                picDisplay.Height / 2 - 100
+            );
+            emitter.impactPoints.Add(teleport);
+
+            picDisplay.MouseClick += picDisplay_MouseClick;
         }
 
 
@@ -57,6 +60,7 @@ namespace WinFormsApp1
             {
                 g.Clear(Color.Black);
                 emitter.Render(g);
+
             }
 
             picDisplay.Invalidate();
@@ -69,10 +73,6 @@ namespace WinFormsApp1
                 emitter.MousePositionX = e.X;
                 emitter.MousePositionY = e.Y;
             }
-
-            // а тут передаем положение мыши, в положение гравитона
-            point2.X = e.X;
-            point2.Y = e.Y;
         }
 
         private void tbDirection_Scroll(object sender, EventArgs e)
@@ -86,11 +86,42 @@ namespace WinFormsApp1
             point1.Power = tbGravitation.Value;
         }
 
-        private void tbGravitation2_Scroll(object sender, EventArgs e)
+        private void picDisplay_MouseClick(object sender, MouseEventArgs e)
         {
-            point2.Power = tbGravitation2.Value;
+            if (e.Button == MouseButtons.Left)
+            {
+                teleport.X = e.X;
+                teleport.Y = e.Y;
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                teleport.ExitX = e.X;
+                teleport.ExitY = e.Y;
+            }
         }
 
+        private void tbTeleportRad_Scroll(object sender, EventArgs e)
+        {
+            if (teleport != null)
+            {
+                teleport.Radius = tbTeleportRad.Value;
+            }
+        }
 
+        private void tbTeleportDirect_Scroll(object sender, EventArgs e)
+        {
+            if (teleport != null)
+            {
+                if (tbTeleportDirect.Value == 0)
+                {
+                    teleport.ChangeDirection = false;
+                }
+                else
+                {
+                    teleport.ChangeDirection = true;
+                    teleport.ExitDirection = tbTeleportDirect.Value;
+                }
+            }
+        }
     }
 }
