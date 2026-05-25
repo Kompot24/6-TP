@@ -11,6 +11,8 @@ namespace WinFormsApp1
         GravityPoint point1;
 
         TeleportPoint teleport;
+
+        List<CounterPoint> counters = new List<CounterPoint>();
         public Form1()
         {
             InitializeComponent();
@@ -88,15 +90,55 @@ namespace WinFormsApp1
 
         private void picDisplay_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if (Control.ModifierKeys == Keys.Alt)
             {
-                teleport.X = e.X;
-                teleport.Y = e.Y;
+                if (e.Button == MouseButtons.Left)
+                {
+                    CounterPoint newCounter = new CounterPoint
+                    {
+                        X = e.X,
+                        Y = e.Y
+                    };
+
+                    counters.Add(newCounter);
+                    emitter.impactPoints.Add(newCounter);
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    CounterPoint targetCounter = null;
+
+                    foreach (var counter in counters)
+                    {
+                        float dx = counter.X - e.X;
+                        float dy = counter.Y - e.Y;
+                        double distance = Math.Sqrt(dx * dx + dy * dy);
+
+                        if (distance < counter.Radius)
+                        {
+                            targetCounter = counter;
+                            break;
+                        }
+                    }
+
+                    if (targetCounter != null)
+                    {
+                        counters.Remove(targetCounter);
+                        emitter.impactPoints.Remove(targetCounter);
+                    }
+                }
             }
-            else if (e.Button == MouseButtons.Right)
+            else
             {
-                teleport.ExitX = e.X;
-                teleport.ExitY = e.Y;
+                if (e.Button == MouseButtons.Left)
+                {
+                    teleport.X = e.X;
+                    teleport.Y = e.Y;
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    teleport.ExitX = e.X;
+                    teleport.ExitY = e.Y;
+                }
             }
         }
 

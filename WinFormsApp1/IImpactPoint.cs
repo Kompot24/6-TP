@@ -94,5 +94,49 @@ namespace WinFormsApp1
         }
     }
 
+    public class CounterPoint : IImpactPoint
+    {
+        public int Radius = 30;
+        public int Count = 0;
+
+        public override void ImpactParticle(Particle particle)
+        {
+            float dx = X - particle.X;
+            float dy = Y - particle.Y;
+            double distance = Math.Sqrt(dx * dx + dy * dy);
+
+            if (distance < Radius)
+            {
+                Count++;
+                particle.Life = 0;
+            }
+        }
+
+        public override void Render(Graphics g)
+        {
+            int redValue = Math.Min(50 + Count * 2, 255);
+
+            SolidBrush brush = new SolidBrush(Color.FromArgb(redValue, 0, 0));
+            Pen pen = new Pen(Color.Red, 2);
+
+            g.FillEllipse(brush, X - Radius, Y - Radius, Radius * 2, Radius * 2);
+            g.DrawEllipse(pen, X - Radius, Y - Radius, Radius * 2, Radius * 2);
+
+            brush.Dispose();
+            pen.Dispose();
+
+            Font font = new Font("Verdana", 10, FontStyle.Bold);
+            SolidBrush textBrush = new SolidBrush(Color.White);
+
+            string text = Count.ToString();
+
+            SizeF textSize = g.MeasureString(text, font);
+            g.DrawString(text, font, textBrush, X - textSize.Width / 2, Y - textSize.Height / 2);
+
+            font.Dispose();
+            textBrush.Dispose();
+        }
+    }
+
 
 }
