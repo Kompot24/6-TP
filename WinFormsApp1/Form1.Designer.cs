@@ -33,14 +33,13 @@
             timer1 = new System.Windows.Forms.Timer(components);
             tbDirection = new TrackBar();
             lblDirection = new Label();
-            tbGravitation = new TrackBar();
             tbTeleportRad = new TrackBar();
             tbTeleportDirect = new TrackBar();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
+            textBox3 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)picDisplay).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tbDirection).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)tbGravitation).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tbTeleportRad).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tbTeleportDirect).BeginInit();
             SuspendLayout();
@@ -77,15 +76,6 @@
             lblDirection.Name = "lblDirection";
             lblDirection.Size = new Size(0, 15);
             lblDirection.TabIndex = 2;
-            // 
-            // tbGravitation
-            // 
-            tbGravitation.Location = new Point(250, 454);
-            tbGravitation.Maximum = 100;
-            tbGravitation.Name = "tbGravitation";
-            tbGravitation.Size = new Size(104, 45);
-            tbGravitation.TabIndex = 3;
-            tbGravitation.Scroll += tbGravitation_Scroll;
             // 
             // tbTeleportRad
             // 
@@ -125,16 +115,25 @@
             textBox2.TabIndex = 7;
             textBox2.Text = "Направление выхода";
             // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(12, 494);
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(181, 23);
+            textBox3.TabIndex = 8;
+            textBox3.Text = "Направление создания частиц";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(788, 529);
+            Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(tbTeleportDirect);
             Controls.Add(tbTeleportRad);
-            Controls.Add(tbGravitation);
             Controls.Add(lblDirection);
             Controls.Add(tbDirection);
             Controls.Add(picDisplay);
@@ -142,7 +141,6 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)picDisplay).EndInit();
             ((System.ComponentModel.ISupportInitialize)tbDirection).EndInit();
-            ((System.ComponentModel.ISupportInitialize)tbGravitation).EndInit();
             ((System.ComponentModel.ISupportInitialize)tbTeleportRad).EndInit();
             ((System.ComponentModel.ISupportInitialize)tbTeleportDirect).EndInit();
             ResumeLayout(false);
@@ -155,10 +153,10 @@
         private System.Windows.Forms.Timer timer1;
         private TrackBar tbDirection;
         private Label lblDirection;
-        private TrackBar tbGravitation;
         private TrackBar tbTeleportRad;
         private TrackBar tbTeleportDirect;
         private TextBox textBox1;
         private TextBox textBox2;
+        private TextBox textBox3;
     }
 }

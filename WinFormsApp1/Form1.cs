@@ -8,11 +8,10 @@ namespace WinFormsApp1
         List<Emitter> emitters = new List<Emitter>();
         Emitter emitter;
 
-        GravityPoint point1;
-
         TeleportPoint teleport;
 
         List<CounterPoint> counters = new List<CounterPoint>();
+        BouncePoint mouseBouncePoint;
         public Form1()
         {
             InitializeComponent();
@@ -25,22 +24,14 @@ namespace WinFormsApp1
                 Spreading = 10,
                 SpeedMin = 10,
                 SpeedMax = 10,
-                ColorFrom = Color.Gold,
-                ColorTo = Color.FromArgb(0, Color.Red),
+                ColorFrom = Color.BlueViolet,
+                ColorTo = Color.FromArgb(0, Color.RoyalBlue),
                 ParticlePerTick = 10,
                 X = picDisplay.Width / 2,
                 Y = picDisplay.Height / 2,
             };
 
             emitters.Add(this.emitter);
-
-            point1 = new GravityPoint
-            {
-                X = picDisplay.Width / 2 + 100,
-                Y = picDisplay.Height / 2
-            };
-
-            emitter.impactPoints.Add(point1);
 
             teleport = new TeleportPoint(
                 picDisplay.Width / 2 - 150,
@@ -51,6 +42,17 @@ namespace WinFormsApp1
             emitter.impactPoints.Add(teleport);
 
             picDisplay.MouseClick += picDisplay_MouseClick;
+
+            BouncePoint staticPoint1 = new BouncePoint { X = 300, Y = picDisplay.Height / 2 - 100 };
+            BouncePoint staticPoint2 = new BouncePoint { X = 450, Y = picDisplay.Height / 2 + 100 };
+
+            emitter.impactPoints.Add(staticPoint1);
+            emitter.impactPoints.Add(staticPoint2);
+            mouseBouncePoint = new BouncePoint { X = picDisplay.Width / 2, Y = picDisplay.Height / 2 };
+            emitter.impactPoints.Add(mouseBouncePoint);
+
+            picDisplay.MouseMove += picDisplay_MouseMove;
+            picDisplay.MouseWheel += picDisplay_MouseWheel;
         }
 
 
@@ -60,7 +62,7 @@ namespace WinFormsApp1
 
             using (var g = Graphics.FromImage(picDisplay.Image))
             {
-                g.Clear(Color.Black);
+                g.Clear(Color.FromArgb(10, 15, 30));
                 emitter.Render(g);
 
             }
@@ -70,10 +72,10 @@ namespace WinFormsApp1
 
         private void picDisplay_MouseMove(object sender, MouseEventArgs e)
         {
-            foreach (var emitter in emitters)
+            if (mouseBouncePoint != null)
             {
-                emitter.MousePositionX = e.X;
-                emitter.MousePositionY = e.Y;
+                mouseBouncePoint.X = e.X;
+                mouseBouncePoint.Y = e.Y;
             }
         }
 
@@ -81,11 +83,6 @@ namespace WinFormsApp1
         {
             emitter.Direction = tbDirection.Value;
             lblDirection.Text = $"{tbDirection.Value}°";
-        }
-
-        private void tbGravitation_Scroll(object sender, EventArgs e)
-        {
-            point1.Power = tbGravitation.Value;
         }
 
         private void picDisplay_MouseClick(object sender, MouseEventArgs e)
@@ -162,6 +159,31 @@ namespace WinFormsApp1
                 {
                     teleport.ChangeDirection = true;
                     teleport.ExitDirection = tbTeleportDirect.Value;
+                }
+            }
+        }
+
+        private void picDisplay_MouseWheel(object sender, MouseEventArgs e)
+        {
+            if (mouseBouncePoint != null)
+            {
+                if (e.Delta > 0)
+                {
+                    mouseBouncePoint.Radius += 5;
+                }
+                else
+                {
+                    mouseBouncePoint.Radius -= 5;
+                }
+
+                if (mouseBouncePoint.Radius < 10)
+                {
+                    mouseBouncePoint.Radius = 10;
+                }
+                if (mouseBouncePoint.Radius > 222)
+                {
+
+                    mouseBouncePoint.Radius = 200;
                 }
             }
         }

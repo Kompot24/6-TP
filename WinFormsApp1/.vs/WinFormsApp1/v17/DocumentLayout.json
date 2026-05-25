@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|D:\\dz\\\u0421#\\6\\WinFormsApp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\iimpactpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:iimpactpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\teleportpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:teleportpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\particle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +23,8 @@
       "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:emitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\teleportpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:teleportpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|d:\\dz\\\u0441#\\6\\winformsapp1\\iimpactpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354CFCBF-8A8E-463C-B6EF-1EB1A821701A}|WinFormsApp1.csproj|solutionrelative:iimpactpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,30 +34,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "TeleportPoint.cs",
               "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\TeleportPoint.cs",
               "RelativeDocumentMoniker": "TeleportPoint.cs",
               "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\TeleportPoint.cs",
               "RelativeToolTip": "TeleportPoint.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowEAAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T08:56:50.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IImpactPoint.cs",
               "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\IImpactPoint.cs",
               "RelativeDocumentMoniker": "IImpactPoint.cs",
               "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\IImpactPoint.cs",
               "RelativeToolTip": "IImpactPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAswGQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T04:16:18.555Z",
               "EditorCaption": ""
@@ -70,7 +70,7 @@
               "RelativeDocumentMoniker": "Emitter.cs",
               "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Emitter.cs",
               "RelativeToolTip": "Emitter.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAwwHgAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T05:11:11.768Z",
               "EditorCaption": ""
@@ -83,27 +83,27 @@
               "RelativeDocumentMoniker": "Particle.cs",
               "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Particle.cs",
               "RelativeToolTip": "Particle.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAwwEwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwEAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T03:53:33.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAADwv0AAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T03:52:45.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\dz\\\u0421#\\6\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

@@ -47,3 +47,4 @@ D:\dz\С#\6\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 D:\dz\С#\6\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 D:\dz\С#\6\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
 D:\dz\С#\6\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+D:\dz\С#\6\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
